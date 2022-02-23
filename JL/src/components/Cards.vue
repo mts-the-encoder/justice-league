@@ -22,7 +22,7 @@ export default {
         width: 350px;
         border-radius: 30px;
         margin: 0 auto;
-        top: 50px;
+        top: 40px;
     }
         .img {
             background-color: red;

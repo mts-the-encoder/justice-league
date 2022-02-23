@@ -29,8 +29,9 @@ export default {
 <style lang="scss">
 @import '@/assets/scss/main.scss';
 
-.main {
+  .main {
   background-image: url(../public/img/bg-dark.png);
-  height: 700px;
+  height: 600px;
 }
+    
 </style>
