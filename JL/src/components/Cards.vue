@@ -4,20 +4,21 @@
         <div class="img">
 
         </div>
-        <div class="description" @change="isDarkMode" :class="{ 'bg-dark': isDarkMode }">
-
+        <div class="description" :class="{ 'bg-dark': isDarkMode }">
+            
         </div>
     </div>
 </template>
 
 <script>
 
-
 export default {
     name: "Cards",
-    components: {
-
-    }
+  data() {
+    return {
+      isDarkMode: false,
+    };
+  },
 }
 </script>
 
@@ -29,7 +30,7 @@ export default {
         width: 350px;
         border-radius: 30px;
         margin: 0 auto;
-        top: 40px;
+        top: 30px;
     }
         .img {
             background-color: red;
@@ -42,12 +43,12 @@ export default {
         .description {
             height: 50%;
             width: 100%;
-            background-color: $greyDark;
+            background-color: #FFF;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
             border-bottom-left-radius: 30px;
             &.bg-dark {
-            background-color: $greyLight;
+            background-color: $greyDark;
             }
         }
 </style>

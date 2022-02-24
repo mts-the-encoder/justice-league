@@ -10,6 +10,7 @@
       <span class="check"></span>
     </label>
     <Cards />
+    <Carroussel />
   </div>
   <div>
     <Footer />
@@ -20,13 +21,15 @@
 import Header from "./components/Header.vue";
 import Cards from "./components/Cards.vue";
 import Footer from "./components/Footer.vue";
+import Carroussel from "./components/Carroussel.vue"
 
 export default {
   name: "App",
   components: {
     Header,
     Cards,
-    Footer
+    Footer,
+    Carroussel
   },
   data() {
     return {
@@ -75,26 +78,26 @@ export default {
     background: #000;
   }
   .check::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 2px;
     left: 2px;
-    background-color: $red;
+    background-color: $greyLight;
     width: 16px;
     height: 16px;
-    border-radius: 50%;
+    border-radius: 10%;
     transition: 0.5s;
-    transform: translate(50px);
+    transform: translate(-50px);
   }
   .dark:checked ~ check::before {
-    transform: translate(50px);
+    transform: translate(-50px);
   }
   .check::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 2px;
     left: 20px;
-    background: $red;
+    background: $greyLight;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -105,8 +108,11 @@ export default {
     transform: translate(50px);
   }
   .text{
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 5px;
-  }
+    font-family: 'JUSTICE LEAGUE', sans-serif;
+    color: $greyDark
+ }
+  
 }
 </style>
