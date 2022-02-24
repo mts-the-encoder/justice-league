@@ -1,21 +1,28 @@
 <template>
     <div class="container">
+    
         <div class="img">
 
         </div>
-        <div class="describe">
+        <div class="description" @change="isDarkMode" :class="{ 'bg-dark': isDarkMode }">
 
         </div>
     </div>
 </template>
 
 <script>
+
+
 export default {
-    name: "Cards"
+    name: "Cards",
+    components: {
+
+    }
 }
 </script>
 
 <style lang="scss">
+    
     .container {
         height: 500px;
         background-color: yellow;
@@ -32,12 +39,15 @@ export default {
             border-top-left-radius: 30px;
             border-bottom-left-radius: 40px;
         }
-        .describe {
+        .description {
             height: 50%;
             width: 100%;
-            background-color: blue;
+            background-color: $greyDark;
             border-top-right-radius: 30px;
             border-bottom-right-radius: 30px;
             border-bottom-left-radius: 30px;
+            &.bg-dark {
+            background-color: $greyLight;
+            }
         }
 </style>

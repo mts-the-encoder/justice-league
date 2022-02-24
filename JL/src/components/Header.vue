@@ -36,25 +36,26 @@ export default {
 @import '@/assets/scss/_reset.scss';
 
 header {
-    background-color: $blue;
+    background-color: $greyDark;
     font-family: 'JUSTICE LEAGUE', sans-serif;
-    color: red;
+    color: $greyLight;
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid $greyLight;
     }
     a {
         text-decoration: none;
         color: $greyLight;
           text-shadow: 
-               1px 1px 0px #0078F0, 
-               1px 1px 0px #0078F0,                    
-               1px 1px 0px #0078F0,                  
-               1px 0px 0px #0078F0;
+               1px 1px 0px $grey, 
+               1px 1px 0px $grey,                    
+               1px 1px 0px $grey,                  
+               1px 0px 0px $grey;
         font-size: 20px;
         transition: .4s;
     }
     a:hover {
-        color: $red;
+        color: $grey;
     }
     .active {
         font-size: 60px;

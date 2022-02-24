@@ -17,24 +17,23 @@ export default {
 @import '@/assets/scss/_reset.scss';  
 
    footer {
-        border-bottom: 5px solid $marine;
-        background-color: $blue;
+        background-color: $greyDark;
         height: 100px;
         font-family: 'JUSTICE LEAGUE', sans-serif;
         padding-bottom: 2rem;
         display: flex;
         justify-content: center;
-        
+
     }
         span {
-            color: $red;
+            color: $greyLight;
             font-weight: bold;
             transition: .4s;
             font-size: 30px;
-            padding: 50px;
             margin-left: 120px;
+            margin-top: 50px;
         }
         span:hover {
-            color: $greyLight;
+            color: $grey;
         }
 </style>
