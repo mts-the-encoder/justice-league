@@ -9,8 +9,7 @@
       <input type="checkbox" class="dark" @click="isDarkMode = !isDarkMode" />
       <span class="check"></span>
     </label>
-    <Cards />
-    <Carroussel />
+    <Carroussel :isDarkMode="isDarkMode"/>
   </div>
   <div>
     <Footer />
@@ -19,7 +18,6 @@
 
 <script>
 import Header from "./components/Header.vue";
-import Cards from "./components/Cards.vue";
 import Footer from "./components/Footer.vue";
 import Carroussel from "./components/Carroussel.vue"
 
@@ -27,7 +25,6 @@ export default {
   name: "App",
   components: {
     Header,
-    Cards,
     Footer,
     Carroussel
   },
@@ -46,10 +43,10 @@ export default {
 @import "@/assets/scss/_reset.scss";
 
 .main {
-  background-image: url(../public/img/bg-light.png);
+  background-image: url(assets/img/bg-light.png);
   height: 600px;
   &.bg-dark {
-    background-image: url(../public/img/bg-dark.png);
+    background-image: url(assets/img/bg-dark.png);
   }
   label {
     margin: 0;

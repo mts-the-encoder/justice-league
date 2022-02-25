@@ -1,21 +1,32 @@
 <template>
   <Splide  :options="{ rewind: true }">
-    <SplideSlide>
-      <img src="image1.jpg" alt="Sample 1">
-    </SplideSlide>
-    <SplideSlide>
-      <img src="image2.jpg" alt="Sample 2">
+    <SplideSlide v-for="heroe in heroes" :key="heroe.id">
+      <Card :data="heroe" :isDarkMode="isDarkMode"/>
     </SplideSlide>
   </Splide>
 </template>
 
 <script>
+import Card from "./Card.vue"
+import { heroes } from "@/data/db.json"
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import { defineComponent } from 'vue';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
-export default defineComponent( {
-  components: { Splide, SplideSlide },
-} );
+export default {
+  name: "Carrossel",
+  components: { Splide, SplideSlide, Card },
+  data() {
+    return {
+      heroes,
+    };
+  },
+  props: {
+      isDarkMode:{type:Boolean, required:true},
+  },
+};
 </script>
+
+<style lang=sccs>
+
+</style>
 
