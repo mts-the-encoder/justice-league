@@ -110,6 +110,5 @@ export default {
     font-family: 'JUSTICE LEAGUE', sans-serif;
     color: $greyDark
  }
-  
 }
 </style>
