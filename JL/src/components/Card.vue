@@ -10,6 +10,7 @@
             <h4>História</h4>
             <p class="p1"> {{ data.p1 }} </p>
             <p class="p2"> {{ data.p2 }} </p>
+            <img class="card-svg" src="../assets/svg/aquaman.svg" >
         </div>
     </div>
 </template>
@@ -54,6 +55,7 @@ export default {
         .description {
             height: 50%;
             width: 100%;
+            padding: 15px;
             background-color: #FFF;
             border-top-right-radius: 40px;
             border-bottom-right-radius: 30px;
@@ -71,11 +73,23 @@ export default {
                 font-size: 20px;
                 align-self: flex-start;
                 margin-left: 15px;
+                position: absolute;
+                margin-bottom: 180px;
             }
             p {
-                padding: 5px;
                 color: $greyDark;
-                
+                font-size: 12px;
+                padding: 5px;
+            }
+            .p1 {
+                margin-top: 140px;
+            }
+            .p2 {
+                margin-bottom: 80px;
+            }
+            img {
+                height: 10px;
+                width: 10px;
             }
         }
 </style>
