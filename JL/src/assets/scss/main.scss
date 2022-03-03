@@ -1,6 +1,7 @@
 @import './_fonts.scss';
 @import './_variables.scss';
 @import './_reset.scss';
+@import './mixins';
 
 /* Splide */
 .splide__arrows {
@@ -27,4 +28,9 @@
 }
 .splide__pagination li {
   visibility: hidden;
+}
+@media (max-width: 425px) {
+  * {
+    width: 100%;
+  }
 }

@@ -11,11 +11,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/main.scss';
-@import '@/assets/scss/_fonts.scss';
-@import '@/assets/scss/_variables.scss';
-@import '@/assets/scss/_reset.scss';  
-
    footer {
         background-color: $greyDark;
         height: 100px;
@@ -36,4 +31,9 @@ export default {
         span:hover {
             color: $grey;
         }
+@media (max-width: 425px) {
+  * {
+    width: 100%;
+  }
+}
 </style>

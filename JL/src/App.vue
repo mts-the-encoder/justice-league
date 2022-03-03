@@ -1,5 +1,4 @@
 <template>
-  <link href="http://fonts.cdnfonts.com/css/justice-league" rel="stylesheet" />
   <div>
     <Header />
   </div>
@@ -9,7 +8,7 @@
       <input type="checkbox" class="dark" @click="isDarkMode = !isDarkMode" />
       <span class="check"></span>
     </label>
-    <Carroussel :isDarkMode="isDarkMode"/>
+    <Carroussel :isDarkMode="isDarkMode" />
   </div>
   <div>
     <Footer />
@@ -19,14 +18,14 @@
 <script>
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import Carroussel from "./components/Carroussel.vue"
+import Carroussel from "./components/Carroussel.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     Footer,
-    Carroussel
+    Carroussel,
   },
   data() {
     return {
@@ -75,7 +74,7 @@ export default {
     background: #000;
   }
   .check::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 2px;
     left: 2px;
@@ -90,7 +89,7 @@ export default {
     transform: translate(-50px);
   }
   .check::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 2px;
     left: 20px;
@@ -104,11 +103,11 @@ export default {
   .dark:checked ~ check::after {
     transform: translate(50px);
   }
-  .text{
+  .text {
     font-size: 17px;
     margin-top: 5px;
-    font-family: 'JUSTICE LEAGUE', sans-serif;
-    color: $greyDark
- }
+    font-family: "JUSTICE LEAGUE", sans-serif;
+    color: $greyDark;
+  }
 }
 </style>
