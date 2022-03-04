@@ -35,12 +35,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "@/assets/scss/main.scss";
-@import "@/assets/scss/_fonts.scss";
-@import "@/assets/scss/_variables.scss";
-@import "@/assets/scss/_reset.scss";
-
+<style lang="scss" scoped>
 .main {
   background-image: url(assets/img/bg-light.png);
   height: 600px;
@@ -105,9 +100,10 @@ export default {
   }
   .text {
     font-size: 17px;
-    margin-top: 5px;
+    margin-top: 7px;
     font-family: "JUSTICE LEAGUE", sans-serif;
     color: $greyDark;
+    margin-right: 10px;
   }
 }
 </style>

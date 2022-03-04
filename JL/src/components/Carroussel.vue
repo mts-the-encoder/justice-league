@@ -26,7 +26,5 @@ export default {
 };
 </script>
 
-<style lang=sccs>
 
-</style>
 

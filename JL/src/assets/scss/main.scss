@@ -3,6 +3,10 @@
 @import './_reset.scss';
 @import './mixins';
 
+* {
+  margin: 0;
+  padding: 0;
+}
 /* Splide */
 .splide__arrows {
   position: absolute;
@@ -14,23 +18,26 @@
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
+    margin-left: 200px;
+}
+.splide__arrow--next {
+  right: 1em;
+  color: red;
+  margin-right: 1000px;
 }
 
 .splide__arrow {
   width: 3em;
   height: 3em;
   box-shadow: 2px 4px 6px rgba(0,0,0,.6);
+  margin-left: 200px;
 }
 
 .splide__arrow svg {
   width: 1em;
   height: 1em;
+  color: blue;
 }
 .splide__pagination li {
   visibility: hidden;
-}
-@media (max-width: 425px) {
-  * {
-    width: 100%;
-  }
 }

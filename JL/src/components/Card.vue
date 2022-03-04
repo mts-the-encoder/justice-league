@@ -32,8 +32,11 @@ export default {
   // }
 };
 </script>
-
-<style lang="scss">
+<style lang="scss" scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
 .container {
   height: 550px;
   background-color: $yellow;

@@ -54,11 +54,10 @@ a:hover {
   font-size: 60px;
   padding: 40px;
   white-space: nowrap;
-   @include respond(desktopsmall) {
+  @include respond(desktopsmall) {
        font-size: 32px;
    }
 }
-
 /* MENU */
 #toggle {
     display: none;
@@ -66,6 +65,7 @@ a:hover {
         display: block;
     }
 }
+/* DEIXAR TUDO SCOPED*/
 ul {
   list-style: none;
   height: 100%;
