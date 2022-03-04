@@ -2,24 +2,24 @@
   <header class="header">
     <a href="#" class="logo">Justice League</a>
     <nav class="nav-bar">
-        <span id="toggle">MENU</span>
-        <ul>
-            <li>
-            <a href="#">HOME</a>
-            </li>
-            <li>
-            <a href="#">INIMIGOS</a>
-            </li>
-            <li>
-            <a href="#">FILMES</a>
-            </li>
-            <li>
-            <a href="#">CURIOSIDADES</a>
-            </li>
-            <li>
-            <a href="#">SOBRE</a>
-            </li>
-        </ul>
+      <span id="toggle">MENU</span>
+      <ul>
+        <li>
+          <a href="#">HOME</a>
+        </li>
+        <li>
+          <a href="#">INIMIGOS</a>
+        </li>
+        <li>
+          <a href="#">FILMES</a>
+        </li>
+        <li>
+          <a href="#">CURIOSIDADES</a>
+        </li>
+        <li>
+          <a href="#">SOBRE</a>
+        </li>
+      </ul>
     </nav>
   </header>
 </template>
@@ -55,15 +55,15 @@ a:hover {
   padding: 40px;
   white-space: nowrap;
   @include respond(desktopsmall) {
-       font-size: 32px;
-   }
+    font-size: 32px;
+  }
 }
 /* MENU */
 #toggle {
-    display: none;
-    @include respond(mobile) {
-        display: block;
-    }
+  display: none;
+  @include respond(mobile) {
+    display: block;
+  }
 }
 /* DEIXAR TUDO SCOPED*/
 ul {
@@ -74,24 +74,22 @@ ul {
   justify-content: center;
   margin-right: 20px;
   @include respond(mobile) {
-      font-size: 16px;
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      position: absolute;
-      right: -20px;
-      top: 96px;
-      background-color: $greyDark;
-      z-index: 100;
+    font-size: 16px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: -20px;
+    top: 96px;
+    background-color: $greyDark;
+    z-index: 100;
 
-      li {
-        margin-bottom: 10px;
-      }
+    li {
+      margin-bottom: 10px;
+    }
   }
 }
 li {
   margin: 0 1rem;
 }
-
-
 </style>
