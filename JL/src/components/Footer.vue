@@ -22,11 +22,6 @@ footer {
   justify-content: center;
   @include respond(desktopsmall) {
     font-size: 24px;
-    @include respond(mobile) {
-      font-size: 24px;
-      margin: 0;
-      padding: 0;
-    }
   }
 }
 span {
@@ -36,13 +31,16 @@ span {
   font-size: 30px;
   margin-left: 120px;
   margin-top: 50px;
+  @include respond(desktopsmall) {
+    font-size: 32px;
+  }
+  @include respond(mobile) {
+      font-size: 16px;
+      align-self: center;
+      margin-right: 45px;
+    }
 }
 span:hover {
   color: $grey;
-}
-@media (max-width: 425px) {
-  * {
-    width: 100%;
-  }
 }
 </style>
