@@ -64,6 +64,11 @@ export default {
     margin-top: 15px;
     height: 20px;
     width: 40px;
+    @include respond(mobile) {
+      width: 30px;
+      height: 15px;
+      padding-bottom: 10px;
+    }
   }
   .dark:checked ~ .check {
     background: #000;
@@ -104,6 +109,9 @@ export default {
     font-family: "JUSTICE LEAGUE", sans-serif;
     color: $greyDark;
     margin-right: 10px;
+    @include respond(mobile) {
+      font-size: 10px;
+    }
   }
 }
 .splide__arrow {
