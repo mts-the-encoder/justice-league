@@ -1,10 +1,11 @@
 <template>
-  <div class="container" :class="{ 'background-.': data.background }">
+  <div class="container" :class="background">
+    {{ data.background }}>
     <figure class="img">
       <img class="card-img" :src="require(`../assets/img/${data.img}.png`)" />
     </figure>
 
-    <div class="description" :class="{ 'bg-dark': data.isDarkMode }">
+    <div class="description" :class="{ 'bg-dark': isDarkMode }">
       <h4>História</h4>
       <p class="p1">{{ data.p1 }}</p>
       <p class="p2">{{ data.p2 }}</p>
@@ -25,11 +26,6 @@ export default {
       console.log(this.data);
     },
   },
-  // computed: {
-  //     darkMode() {
-  //         return isDarkMode ? '$yellow' : '$blue';
-  //     }
-  // }
 };
 </script>
 <style lang="scss" scoped>
@@ -43,6 +39,8 @@ export default {
   width: 400px;
   border-radius: 30px;
   margin: 0 auto;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
 }
 .img {
   height: 50%;
@@ -65,7 +63,17 @@ export default {
   text-align: center;
   flex-direction: column;
   &.bg-dark {
-    background-color: $greyDark;
+    background-color: #2b2828;
+    color: #fff;
+    h4 {
+      color: #fff;
+    }
+    .p1 {
+      color: #fff;
+    }
+    .p2 {
+      color: #fff;
+    }
   }
   h4 {
     padding: 10px;

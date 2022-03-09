@@ -2,8 +2,29 @@
   <header class="header">
     <a href="#" class="logo">Justice League</a>
     <nav class="nav-bar">
-      <span id="toggle">MENU</span>
-      <ul>
+      <i
+        @click="showMenu = !showMenu"
+        class="fas fa-stream"
+        :class="{ 'show-menu': showMenu }"
+      ></i>
+      <ul class="toggle" :class="{ 'show-menu': showMenu }">
+        <li>
+          <a href="#">HOME</a>
+        </li>
+        <li>
+          <a href="#">INIMIGOS</a>
+        </li>
+        <li>
+          <a href="#">FILMES</a>
+        </li>
+        <li>
+          <a href="#">CURIOSIDADES</a>
+        </li>
+        <li>
+          <a href="#">SOBRE</a>
+        </li>
+      </ul>
+      <ul class="desktop">
         <li>
           <a href="#">HOME</a>
         </li>
@@ -27,6 +48,11 @@
 <script>
 export default {
   name: "header",
+  data() {
+    return {
+      showMenu: true,
+    };
+  },
 };
 </script>
 
@@ -59,14 +85,23 @@ a:hover {
   }
 }
 /* MENU */
-#toggle {
+.toggle {
   display: none;
-  @include respond(mobile) {
+  &.showMenu {
     display: block;
+  }
+  @include respond(mobile) {
+    display: none;
+    background: none;
+    padding-bottom: 10px;
+    text-decoration: none;
+    padding: 10px;
+    flex-direction: column;
+    word-spacing: 10px;
   }
 }
 /* DEIXAR TUDO SCOPED*/
-ul {
+.desktop {
   list-style: none;
   height: 100%;
   display: flex;
@@ -91,5 +126,25 @@ ul {
 }
 li {
   margin: 0 1rem;
+  @include respond(mobile) {
+    list-style-type: none;
+    line-height: 22px;
+  }
+}
+.desktop {
+  @include respond(mobile) {
+    display: none;
+  }
+}
+i {
+  @include respond(mobile) {
+    display: block;
+    margin-top: 40px;
+    margin-right: 30px;
+    &.showMenu {
+      display: none;
+      visibility: hidden;
+    }
+  }
 }
 </style>

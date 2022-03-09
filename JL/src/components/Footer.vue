@@ -11,11 +11,11 @@ export default {};
 <style lang="scss" scoped>
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
 }
 footer {
   background-color: $greyDark;
-  height: 100px;
+  height: 90px;
   font-family: "JUSTICE LEAGUE", sans-serif;
   padding-bottom: 2rem;
   display: flex;
