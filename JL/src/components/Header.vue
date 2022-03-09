@@ -2,11 +2,6 @@
   <header class="header">
     <a href="#" class="logo">Justice League</a>
     <nav class="nav-bar">
-      <i
-        @click="showMenu = !showMenu"
-        class="fas fa-stream"
-        :class="{ 'show-menu': showMenu }"
-      ></i>
       <ul class="toggle" :class="{ 'show-menu': showMenu }">
         <li>
           <a href="#">HOME</a>
@@ -134,17 +129,6 @@ li {
 .desktop {
   @include respond(mobile) {
     display: none;
-  }
-}
-i {
-  @include respond(mobile) {
-    display: block;
-    margin-top: 40px;
-    margin-right: 30px;
-    &.showMenu {
-      display: none;
-      visibility: hidden;
-    }
   }
 }
 </style>

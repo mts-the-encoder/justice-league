@@ -4,6 +4,7 @@
 
 /* Splide */
 .splide__arrows {
+  visibility: hidden;
   position: absolute;
     left: 50%;
     top: 50%;
@@ -19,11 +20,13 @@
   width: 3em;
   height: 3em;
   box-shadow: 2px 4px 6px rgba(0,0,0,.6);
+  visibility: hidden;
 }
 
 .splide__arrow svg {
   width: 1em;
   height: 1em;
+  visibility: hidden;
 }
 
 .splide__slide {
@@ -36,4 +39,5 @@
   margin: 0;
   outline: none;
   position: relative;
+  visibility: hidden;
 }
