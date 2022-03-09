@@ -64,7 +64,6 @@ export default {
   margin: 0 auto;
   position: absolute;
   bottom: 220px;
-  overflow: visible;
 }
 }
 .img {
@@ -83,6 +82,10 @@ export default {
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 40px;
 }
+  figure {
+    position: inherit;
+    height: 100%;
+  }
 .description {
   height: 50%;
   width: 100%;
