@@ -35,10 +35,10 @@ span {
     font-size: 32px;
   }
   @include respond(mobile) {
-      font-size: 16px;
-      align-self: center;
-      margin-right: 45px;
-    }
+    font-size: 16px;
+    align-self: center;
+    margin-right: 45px;
+  }
 }
 span:hover {
   color: $grey;

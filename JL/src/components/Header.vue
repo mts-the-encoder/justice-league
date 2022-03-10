@@ -51,7 +51,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
+
 header {
   background-color: $greyDark;
   font-family: "JUSTICE LEAGUE", sans-serif;

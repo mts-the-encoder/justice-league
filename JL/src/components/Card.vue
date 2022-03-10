@@ -1,6 +1,11 @@
 <template>
-  <div class="container" :class="[ data.background]"> {{ getBackgroundColor }}>
-    <figure class="img" :class="{ 'color-blue': isDarkMode }" :style="{ 'background-color': data.background }">
+  <div class="container" :class="[data.background]">
+    {{ getBackgroundColor }}>
+    <figure
+      class="img"
+      :class="{ 'color-blue': isDarkMode }"
+      :style="{ 'background-color': data.background }"
+    >
       <img class="card-img" :src="require(`../assets/img/${data.img}.png`)" />
     </figure>
 
@@ -24,7 +29,7 @@ export default {
     data() {
       console.log(this.data);
     },
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -42,29 +47,29 @@ export default {
   padding-bottom: 10px;
   box-sizing: border-box;
   &.container-red {
-  background-color: $redLight;
+    background-color: $redLight;
   }
   &.container-grey {
-    background-color: #4D4D4D;
+    background-color: #4d4d4d;
   }
   &.container-marine {
     background-color: #056369;
   }
   &.container-orange {
-    background-color: #FF8B20;
+    background-color: #ff8b20;
   }
   &.container-ylight {
-    background-color: #FFC806;
+    background-color: #ffc806;
   }
   &.container-blue {
-    background-color: #0651C1;
+    background-color: #0651c1;
   }
-    img {
-  height: 410px;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 220px;
-}
+  img {
+    height: 410px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 220px;
+  }
 }
 .img {
   height: 50%;
@@ -82,10 +87,10 @@ export default {
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 40px;
 }
-  figure {
-    position: inherit;
-    height: 100%;
-  }
+figure {
+  position: inherit;
+  height: 100%;
+}
 .description {
   height: 50%;
   width: 100%;
